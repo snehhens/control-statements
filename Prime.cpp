@@ -1,4 +1,4 @@
-
+// This program checks if a number is prime.
 #include <iostream>
 #include <cmath>
 
