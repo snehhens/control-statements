@@ -12,7 +12,7 @@ int main() {
 
   bool prime=0;
 
-  for(int i=2;i<sqrt(n);i++){
+  for(int i=2; i < sqrt(n); i++){
     if(n%i==0){
         cout << "non-prime" << endl;
         prime=1;
