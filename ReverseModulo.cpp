@@ -15,7 +15,7 @@ int main(){
         n=n/10;
     }
 
-    cout << "reverse" << endl;
+    cout << reverse << endl;
 
     return 0;
 }
