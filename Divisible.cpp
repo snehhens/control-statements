@@ -6,6 +6,8 @@ int main() {
   int divisibleBy;
 
   cout << "Enter a number to find which numbers from 1 to 100 are divisible by : ";
+  cout << "\nChoose a game mode:" << endl << "Enter 2 to generate even numbers" << endl << "Enter 3 to find numbers divisible by 3" << endl << "Enter 5 to find numbers divisible by 5" << endl;
+        
   cin >> divisibleBy;
 
 // Switch statement checks which number the user entered and executes the appropriate code.
