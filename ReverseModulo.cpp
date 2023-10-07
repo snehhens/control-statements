@@ -8,11 +8,11 @@ int main(){
     int n;
     cin >> n;
 
-    int reverse=0;
-    while(n>0){
-        int lastdigit = n%10;
-        reverse = reverse*10 + lastdigit;
-        n=n/10;
+    int reverse=0; // This variable will store the reversed number.
+    while(n>0){ // This while loop will run until the number is 0.
+        int lastdigit = n%10; // Store last digit
+        reverse = reverse*10 + lastdigit; // Reverse number
+        n=n/10; // Remove last digir
     }
 
     cout << reverse << endl;
