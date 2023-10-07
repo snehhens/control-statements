@@ -1,28 +1,22 @@
 
 #include <iostream>
-#include <cmath>
 
 using namespace std;
 
 int main(){
 
-  int n;
-  cin >> n;
+    int num, first=0, second=1, next;
 
-  int total=0;
-  int a=n;
-  while(n>0){
-    int lastdigit = n%10;
-    total+= pow(lastdigit,3);
-    n=n/10;
-  }
+    cout << "Enter the number of terms to be printed in fibonacci series : ";
+    cin >> num;
 
-  if(total==a){
-    cout << "Armstrong number" << endl;
-  }
-  else{
-    cout << "Not an armstrong number" << endl;
-  }
+    cout << "Fibonacci Series" << endl;
+    for(int i=0; i<num; i++){
+        cout << first << endl;
+        next = first + second;
+        first = second;
+        second = next;
+    }
 
-
+    return 0;
 }
