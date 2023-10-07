@@ -9,10 +9,10 @@ int main() {
     std::cout << "Enter a password: ";
     std::cin >> password;
 
-    if (password.length() % 2 == 0) {
-        std::cout << "Password is strong." << std::endl;
+    if (password.length() % 2 != 0) {
+        std::cout << "Password is Weak." << std::endl;
     } else {
-        std::cout << "Password is weak." << std::endl;
+        std::cout << "Password is Strong." << std::endl;
     }
 
     return 0;
