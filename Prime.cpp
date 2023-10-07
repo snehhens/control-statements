@@ -9,14 +9,18 @@ int main() {
   cout << "Enter number : " << endl;
   cin >> n;
 
+  bool prime=0;
+
   for(int i=2;i<n;i++){
     if(n%i==0){
         cout << "non-prime" << endl;
+        prime=1;
         break;
     }
-    else{
-        cout << "prime" << endl;
-    }
+  }
+
+  if(prime==0){
+    cout << "prime" << endl;
   }
 
   return 0;
